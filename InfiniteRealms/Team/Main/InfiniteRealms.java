@@ -17,6 +17,10 @@ import BlueAtrium.InfiniteRealms.Team.Items.JadeSpade;
 import BlueAtrium.InfiniteRealms.Team.Items.JadeSword;
 import BlueAtrium.InfiniteRealms.Team.Items.MaterializedCoal;
 import BlueAtrium.InfiniteRealms.Team.Items.Ruby;
+import BlueAtrium.InfiniteRealms.Team.Items.RubyAxe;
+import BlueAtrium.InfiniteRealms.Team.Items.RubyPickaxe;
+import BlueAtrium.InfiniteRealms.Team.Items.RubySpade;
+import BlueAtrium.InfiniteRealms.Team.Items.RubySword;
 import BlueAtrium.InfiniteRealms.Team.Items.Saphire;
 import BlueAtrium.InfiniteRealms.Team.Items.Topaz;
 import BlueAtrium.InfiniteRealms.Team.Items.UnHolyIngot;
@@ -70,6 +74,10 @@ public static Item JadeSword;
 public static Item JadeAxe;
 public static Item JadePickaxe;
 public static Item JadeSpade;
+public static Item RubySword;
+public static Item RubyAxe;
+public static Item RubyPickaxe;
+public static Item RubySpade;
 
 int InfiniteTestID = 20000;
 int MaterializedCoalID = 20001;
@@ -87,6 +95,11 @@ int JadeSwordID = 20012;
 int JadeAxeID = 20013;
 int JadePickaxeID = 20014;
 int JadeSpadeID = 20015;
+int RubySwordID = 20016;
+int RubyAxeID = 20017;
+int RubyPickaxeID = 20018;
+int RubySpadeID = 20019;
+
 
 @Instance("InfiniteRealms") 
 public static InfiniteRealms instance;
@@ -112,6 +125,10 @@ public void Load(FMLInitializationEvent event){
   JadeAxe = new JadeAxe(JadeAxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("JadeAxe");
   JadePickaxe = new JadePickaxe(JadePickaxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("JadePickaxe");
   JadeSpade = new JadeSpade(JadeSpadeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("JadeSpade");
+  RubySword = new RubySword(RubySwordID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("RubySword");
+  RubyAxe = new RubyAxe(RubyAxeID, CompressedGoldAxeID, null, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("RubyAxe");
+  RubyPickaxe = new RubyPickaxe(RubyPickaxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("RubyPickaxe");
+  RubySpade = new RubySpade(RubySpadeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("RubySpade");
   
   GameRegitry();
   LangunageRegistry();
