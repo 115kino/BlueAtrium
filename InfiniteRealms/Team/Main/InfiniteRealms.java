@@ -40,11 +40,11 @@ public static Block SaphireOre;
 public static Block TopazOre;
 public static Block JadeOre;
 
-int UnHolyOreID = 10000;
-int RubyOreID = 10001;
-int SaphireOreID = 10002;
-int TopazOreID = 10003;
-int JadeOreID = 10004;
+int UnHolyOreID = 8000;
+int RubyOreID = 8001;
+int SaphireOreID = 8002;
+int TopazOreID = 8003;
+int JadeOreID = 8004;
 	
 public static Item InfiniteTest;
 public static Item MaterializedCoal;
