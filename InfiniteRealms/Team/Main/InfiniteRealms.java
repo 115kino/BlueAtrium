@@ -11,6 +11,10 @@ import BlueAtrium.InfiniteRealms.Team.Items.CompressedGoldSword;
 import BlueAtrium.InfiniteRealms.Team.Items.CompressesdGold;
 import BlueAtrium.InfiniteRealms.Team.Items.InfinteTest;
 import BlueAtrium.InfiniteRealms.Team.Items.Jade;
+import BlueAtrium.InfiniteRealms.Team.Items.JadeAxe;
+import BlueAtrium.InfiniteRealms.Team.Items.JadePickaxe;
+import BlueAtrium.InfiniteRealms.Team.Items.JadeSpade;
+import BlueAtrium.InfiniteRealms.Team.Items.JadeSword;
 import BlueAtrium.InfiniteRealms.Team.Items.MaterializedCoal;
 import BlueAtrium.InfiniteRealms.Team.Items.Ruby;
 import BlueAtrium.InfiniteRealms.Team.Items.Saphire;
@@ -62,6 +66,10 @@ public static Item CompressedGoldSword;
 public static Item CompressedGoldAxe;
 public static Item CompressedGoldPickaxe;
 public static Item CompressedGoldSpade;
+public static Item JadeSword;
+public static Item JadeAxe;
+public static Item JadePickaxe;
+public static Item JadeSpade;
 
 int InfiniteTestID = 20000;
 int MaterializedCoalID = 20001;
@@ -75,6 +83,10 @@ int CompressedGoldSwordID = 20008;
 int CompressedGoldAxeID = 20009;
 int CompressedGoldPickaxeID = 20010;
 int CompressedGoldSpadeID = 20011;
+int JadeSwordID = 20012;
+int JadeAxeID = 20013;
+int JadePickaxeID = 20014;
+int JadeSpadeID = 20015;
 
 @Instance("InfiniteRealms") 
 public static InfiniteRealms instance;
@@ -96,6 +108,10 @@ public void Load(FMLInitializationEvent event){
   CompressedGoldAxe = new CompressedGoldAxe(CompressedGoldAxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGoldAxe");
   CompressedGoldPickaxe = new CompressedGoldPickaxe(CompressedGoldPickaxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGoldPickaxe");
   CompressedGoldSpade = new CompressedGoldSpade(CompressedGoldSpadeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGoldPickaxe");
+  JadeSword = new JadeSword(JadeSwordID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("JadeSword");
+  JadeAxe = new JadeAxe(JadeAxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("JadeAxe");
+  JadePickaxe = new JadePickaxe(JadePickaxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("JadePickaxe");
+  JadeSpade = new JadeSpade(JadeSpadeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("JadeSpade");
   
   GameRegitry();
   LangunageRegistry();

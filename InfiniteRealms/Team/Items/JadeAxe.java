@@ -3,15 +3,15 @@ package BlueAtrium.InfiniteRealms.Team.Items;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.EnumToolMaterial;
-import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTool;
 
-public class CompressedGoldAxe extends ItemAxe
+public class JadeAxe extends ItemTool
 {
     /** an array of the blocks this axe is effective against */
     public static final Block[] blocksEffectiveAgainst = new Block[] {Block.planks, Block.bookShelf, Block.wood, Block.chest, Block.stoneDoubleSlab, Block.stoneSingleSlab, Block.pumpkin, Block.pumpkinLantern};
 
-    public CompressedGoldAxe(int par1, EnumToolMaterial par2EnumToolMaterial)
+    public JadeAxe(int par1, EnumToolMaterial par2EnumToolMaterial)
     {
         super(par1, 3.0F, par2EnumToolMaterial, blocksEffectiveAgainst);
     }
