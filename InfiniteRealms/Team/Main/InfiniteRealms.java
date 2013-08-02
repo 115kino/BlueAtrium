@@ -31,7 +31,7 @@ import net.minecraft.item.Item;
 
 public class InfiniteRealms 
 {
-@SidedProxy(clientSide = "InfiniteRealms.Team.Main.ClientProxyInfiniteRealms", serverSide = "InfiniteRealms.Team.Main.CommonProxyInfiniteRealms")
+@SidedProxy(clientSide = "BlueAtrium.InfiniteRealms.Team.Main.ClientProxyInfiniteRealms", serverSide = "BlueAtrium.InfiniteRealms.Team.Main.CommonProxyInfiniteRealms")
 public static ClientProxyInfiniteRealms proxy;
 	
 public static Block UnHolyOre;
