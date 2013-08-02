@@ -1,6 +1,13 @@
 package BlueAtrium.InfiniteRealms.Team.Main;
 
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import BlueAtrium.InfiniteRealms.Team.Blocks.UnHolyOre;
+import BlueAtrium.InfiniteRealms.Team.Items.CompressedGoldAxe;
+import BlueAtrium.InfiniteRealms.Team.Items.CompressedGoldPickaxe;
+import BlueAtrium.InfiniteRealms.Team.Items.CompressedGoldSpade;
+import BlueAtrium.InfiniteRealms.Team.Items.CompressedGoldSword;
 import BlueAtrium.InfiniteRealms.Team.Items.CompressesdGold;
 import BlueAtrium.InfiniteRealms.Team.Items.InfinteTest;
 import BlueAtrium.InfiniteRealms.Team.Items.Jade;
@@ -21,9 +28,6 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 
 @Mod(modid = "InfiniteRealms", version = "1.0.0")
 @NetworkMod(clientSideRequired = true, serverSideRequired = true)
@@ -54,6 +58,10 @@ public static Item Saphire;
 public static Item Topaz;
 public static Item CompressedGold;
 public static Item Jade;
+public static Item CompressedGoldSword;
+public static Item CompressedGoldAxe;
+public static Item CompressedGoldPickaxe;
+public static Item CompressedGoldSpade;
 
 int InfiniteTestID = 20000;
 int MaterializedCoalID = 20001;
@@ -63,6 +71,10 @@ int SaphireID = 20004;
 int TopazID = 20005;
 int CompressedGoldID = 20006;
 int JadeID = 20007;
+int CompressedGoldSwordID = 20008;
+int CompressedGoldAxeID = 20009;
+int CompressedGoldPickaxeID = 20010;
+int CompressedGoldSpadeID = 20011;
 
 @Instance("InfiniteRealms") 
 public static InfiniteRealms instance;
@@ -80,7 +92,10 @@ public void Load(FMLInitializationEvent event){
   Topaz = new Topaz(TopazID).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("Topaz");
   CompressedGold = new CompressesdGold(CompressedGoldID).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGold");
   Jade = new Jade(JadeID).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("Jade"); 
-  
+  CompressedGoldSword = new CompressedGoldSword(CompressedGoldSwordID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGoldSword");
+  CompressedGoldAxe = new CompressedGoldAxe(CompressedGoldAxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGoldAxe");
+  CompressedGoldPickaxe = new CompressedGoldPickaxe(CompressedGoldPickaxeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGoldPickaxe");
+  CompressedGoldSpade = new CompressedGoldSpade(CompressedGoldSpadeID, null).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CompressedGoldPickaxe");
   
   GameRegitry();
   LangunageRegistry();
